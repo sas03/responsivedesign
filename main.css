@@ -1,0 +1,92 @@
+#container{
+	width:960px;
+	margin:0px auto;
+	background-color: red;
+	color: white;
+}
+
+#left-column{
+	width:500px;
+	float:left;
+	background:blue;
+	font-family: Courier;
+	margin-bottom: 10px;
+}
+
+#right-column{
+	width:460px;
+	float:left;
+	background:green;
+	font-family: Courier;	
+	margin-bottom: 10px;
+}
+
+#footer{
+	width:960px;
+	margin:0px auto;	
+	background-color: red;
+}
+
+img{
+	width: 960px;
+}
+
+p{
+	width: 960px;
+	text-align: center;
+	text-decoration-line: underline;
+}
+
+/*Tablets and so on*/
+@media screen and (max-width:959px){
+	#container{
+		width: 100%;
+	}
+
+	#left-column{
+		width: 55%;
+	}
+
+	#right-column{
+		width: 45%;
+	}
+
+	img{
+		width: 100%;
+	}
+
+	#footer{
+		width: 100%;
+	}
+
+	p{
+		width: 100%;
+	}
+}
+
+/*Iphone 5, Iphone 4, Samsung Galaxy, and so on*/
+@media screen and (max-width:640px){
+	#left-column{
+		width: 100%;
+	}
+
+	#right-column{
+		width: 100%;
+	}
+
+	p{
+		width: 100%;
+	}
+	
+}
+
+/*Stays the same size so that you can maneuver with the screen for better word visibility*/
+@media screen and (max-width:320px){
+	#container{
+		width:320px;
+	}
+
+	#footer{
+		width:320px;
+	}
+}
